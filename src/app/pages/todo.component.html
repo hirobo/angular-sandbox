@@ -1,0 +1,18 @@
+<div class="container">
+  <app-panel>
+    <app-panel-title>
+      <strong>Todos</strong>
+    </app-panel-title>
+    <app-panel-content>
+      <p>list of todos</p>
+      <ul class="list-group">
+        <li *ngFor="let todo of todos"
+            [ngClass]="getClassesForTodo(todo)"
+            [ngStyle]="getStyle(todo)">
+          {{todo.title}} ({{todo.urgency}})
+        </li>
+      </ul>
+    </app-panel-content>
+  </app-panel>
+  <app-todo-add (onTodoAdd)=" todos.push($event)"></app-todo-add>
+</div>
