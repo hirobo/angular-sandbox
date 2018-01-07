@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
-  selector: 'app-select',
+  selector: 'app-todo-select',
   template: `
     <div class="dropdown">
       <button class="btn btn-default dropdown-toggle"
@@ -17,9 +17,9 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
     </div>
   `,
 })
-export class SelectComponent {
+export class TodoSelectComponent {
   dropDownOpend = false;
-  buttonLabel = "-- please select ---";
+  buttonLabel = '-- please select ---';
 
   @Input() options: String[];
   @Output() onChange = new EventEmitter();

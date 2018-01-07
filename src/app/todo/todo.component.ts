@@ -1,6 +1,5 @@
-import {Component} from '@angular/core';
-import {Todo} from '../todo';
-import {Title} from '@angular/platform-browser';
+import { Component } from '@angular/core';
+import { Todo } from './todo';
 
 @Component({
   selector: 'app-page-todo',

@@ -1,0 +1,10 @@
+<div class="container">
+  <app-panel>
+    <app-panel-title>Wikipedia search</app-panel-title>
+    <app-panel-content>
+      <input class="form-control" type="text" [(ngModel)]="keyWord"/>
+      <br/>
+      <button class="btn btn-primary" (click)="onSearch()">Search!</button>
+    </app-panel-content>
+  </app-panel>
+</div>

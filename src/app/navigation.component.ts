@@ -6,19 +6,14 @@ import {Component} from '@angular/core';
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <ul class="nav navbar-nav">
-          <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-            <a routerLink="/">Home</a>
-          </li>
-          <li routerLinkActive="active">
-            <a routerLink="/wikipedia-search">Search</a>
-          </li>
-          <li routerLinkActive="active">
-            <a routerLink="/todo">ToDo</a>
-          </li>
+          <li><a [routerLink]="['/']">Home</a></li>
+          <li><a [routerLink]="['/welcome']">Welcome</a></li>
+          <li><a [routerLink]="['/todo']">Todo</a></li>
+          <li><a [routerLink]="['/wikipedia-search']">Wikipedia Search</a></li>
+          <li><a [routerLink]="['/products']">Products List</a></li>
         </ul>
       </div>
-    </nav>
-  `,
+    </nav>`,
 })
 export class NavigationComponent {
 }

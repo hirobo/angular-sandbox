@@ -1,12 +1,11 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-panel-content',
   template: `
     <div>
       <ng-content></ng-content>
-    </div>
-  `,
+    </div>    `,
 })
 
 export class PanelContentComponent {
